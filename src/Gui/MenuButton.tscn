@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/Assets/Sprites/Gui/blue_button01.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Sprites/Gui/blue_button00.png" type="Texture" id=2]
+[ext_resource path="res://src/Assets/Fonts/MenuButtonFont.tres" type="DynamicFont" id=3]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 190, 45 )
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 190, 49 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[node name="Button" type="Button"]
+margin_top = 2.05946
+margin_right = 250.0
+margin_bottom = 51.0595
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+text = "Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
