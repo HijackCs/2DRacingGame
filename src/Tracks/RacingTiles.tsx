@@ -4,9 +4,9 @@
   <export target="RacingTiles.tres" format="Godot"/>
  </editorsettings>
  <properties>
-  <property name="projectRoot" value="D:/Home/_Game Dev _/Godot/Projects/RacingGame"/>
+  <property name="projectRoot" value="D:/Home/_Game Dev _/Godot/Projects/2DRacingGame"/>
  </properties>
- <image source="../Sprites/Tiles/spritesheet_tiles.png" width="2304" height="2304"/>
+ <image source="../Assets/Sprites/Tiles/spritesheet_tiles.png" width="2304" height="2304"/>
  <tile id="2">
   <objectgroup draworder="index" id="3">
    <object id="4" x="44" y="1">

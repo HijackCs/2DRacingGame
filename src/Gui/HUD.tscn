@@ -280,13 +280,13 @@ text = "1 / 4"
 [node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainVBoxContainer"]
 margin_top = 69.0
 margin_right = 1003.0
-margin_bottom = 159.0
+margin_bottom = 173.0
 size_flags_vertical = 3
 
 [node name="LapTimeContainer" type="VBoxContainer" parent="MainContainer/MainVBoxContainer"]
-margin_top = 163.0
+margin_top = 177.0
 margin_right = 1003.0
-margin_bottom = 198.0
+margin_bottom = 177.0
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -294,10 +294,10 @@ __meta__ = {
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainVBoxContainer/LapTimeContainer"]
 margin_right = 1003.0
-margin_bottom = 35.0
 alignment = 1
 
 [node name="lap_time" type="Label" parent="MainContainer/MainVBoxContainer/LapTimeContainer/HBoxContainer"]
+visible = false
 margin_left = 400.0
 margin_right = 602.0
 margin_bottom = 35.0
@@ -305,15 +305,16 @@ custom_fonts/font = ExtResource( 3 )
 text = "00 : 03 : 34"
 
 [node name="DifContainer" type="VBoxContainer" parent="MainContainer/MainVBoxContainer"]
-margin_top = 202.0
+margin_top = 181.0
 margin_right = 1003.0
-margin_bottom = 237.0
+margin_bottom = 181.0
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Dif_chrono" type="Label" parent="MainContainer/MainVBoxContainer/DifContainer"]
+visible = false
 margin_right = 1003.0
 margin_bottom = 35.0
 custom_fonts/font = SubResource( 6 )
@@ -325,7 +326,7 @@ __meta__ = {
 }
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MainContainer/MainVBoxContainer"]
-margin_top = 241.0
+margin_top = 185.0
 margin_right = 1003.0
 margin_bottom = 585.0
 size_flags_vertical = 3
@@ -346,10 +347,9 @@ __meta__ = {
 }
 
 [node name="Begin_counter" type="Label" parent="MainContainer/BeginCounterContainer"]
-visible = false
-margin_top = 264.0
-margin_right = 1024.0
-margin_bottom = 336.0
+margin_top = 256.0
+margin_right = 1003.0
+margin_bottom = 328.0
 custom_fonts/font = SubResource( 10 )
 text = "abc"
 align = 1
@@ -380,4 +380,5 @@ offset = Vector2( 0, -50 )
 position = Vector2( 513.748, 145.66 )
 scale = Vector2( 1.20094, 1.20094 )
 texture = ExtResource( 5 )
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
