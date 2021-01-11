@@ -3,7 +3,7 @@ extends Node
 var file_path = "res://Keybinds.ini"
 var config_file
 var keybinds = {}
-
+var curren_track = "res://src/Tracks/track1.tscn"
 
 func _ready():
 	config_file = ConfigFile.new()

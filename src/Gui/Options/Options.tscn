@@ -108,6 +108,7 @@ margin_top = 0.0
 margin_right = 578.0
 margin_bottom = 45.0
 text = "Back"
+
 [connection signal="pressed" from="mainContainer/VBoxContainer/MarginContainer/HBoxContainer/General" to="." method="_on_General_pressed"]
 [connection signal="pressed" from="mainContainer/VBoxContainer/MarginContainer/HBoxContainer/Graphics" to="." method="_on_Graphics_pressed"]
 [connection signal="pressed" from="mainContainer/VBoxContainer/MarginContainer/HBoxContainer/Control" to="." method="_on_Control_pressed"]

@@ -25,6 +25,9 @@ var acceleration = Vector2.ZERO
 var velocity = Vector2.ZERO
 var steer_direction
 
+onready var trail1 = $TrailPos1/Trail
+onready var trail2 = $TrailPos2/Trail
+onready var trails = [trail1,trail2]
 
 var current_time = 0.0
 var lap_time = 0.0
@@ -110,8 +113,12 @@ func get_input():
 
 	if Input.is_action_pressed("drift"):
 		traction_fast = 0
+		for trail in trails:
+			trail.leave_tracks = true
 	else:
 		traction_fast = 0.1
+		for trail in trails:
+			trail.leave_tracks = false
 
 
 func calculate_steering(delta):

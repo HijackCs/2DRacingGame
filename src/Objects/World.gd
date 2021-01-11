@@ -1,13 +1,10 @@
 extends Node2D
 
-export(String) var main_track_path
-
 var difference = 0
 signal stop_animation
 
 func _ready():
-#	var main_track=load("res://Assets/Tracks/track0.tscn").instance()
-	var main_track=load(main_track_path).instance()
+	var main_track=load(Global.curren_track).instance()
 	add_child_below_node($Track,main_track,true)
 	$ScoreBoard.get_child(0).hide()
 	

@@ -56,7 +56,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="6" name="Objects">
+ <objectgroup id="6" name="Objects" visible="0">
   <object id="1" name="FinishLine" type="Area2D" x="1051.52" y="148.485" width="63.6364" height="472.727"/>
   <object id="2" name="CarSpawn" type="Node2D" x="936.364" y="381.818" width="24.2424" height="33.3333"/>
  </objectgroup>
